@@ -31,8 +31,8 @@ define Package/vitetris
   SECTION:=games
   CATEGORY:=Games
   SUBMENU:=Filesystem
-  TITLE:=Terminal tetris game
-  URL:=https://github.com/vicgeralds/vitetris
+  TITLE:=VITETRIS - Virtual terminal *tris clone
+  URL:=http://victornils.net/tetris
 endef
 
 define Package/vitetris/description
