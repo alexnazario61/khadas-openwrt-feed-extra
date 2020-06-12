@@ -8,8 +8,9 @@ PKG_VERSION:=1.4.5
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://codeload.github.com/facebook/zstd/tar.gz/v$(PKG_VERSION)?
-PKG_HASH:=532aa7b3a873e144bbbedd9c0ea87694
+#PKG_SOURCE_URL:=https://codeload.github.com/facebook/zstd/tar.gz/v$(PKG_VERSION)?
+PKG_SOURCE_URL:=https://github.com/facebook/$(PKG_NAME)/releases/download/v$(PKG_VERSION)/
+PKG_HASH:=dd0b53631303b8f972dafa6fd34beb0c
 
 PKG_MAINTAINER:=Amol Bhave <ambhave@fb.com>
 PKG_LICENSE:=GPL-2.0-or-later
