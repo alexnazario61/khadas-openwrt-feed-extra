@@ -22,7 +22,7 @@ define Package/uinput
 endef
 
 define Package/uinput/description
-  This package contains an cgi utility that is useful for up/downloading files
+  This package contains uinput - generate user kbd/mouse events
 endef
 
 define Build/Prepare
