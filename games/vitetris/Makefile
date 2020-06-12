@@ -1,0 +1,47 @@
+# ## hyphop ##
+# This is free software, licensed under the GNU General Public License v2.
+# See /LICENSE for more information.
+#
+
+include $(TOPDIR)/rules.mk
+
+PKG_NAME:=vitetris
+PKG_VERSION:=0.58.0
+PKG_RELEASE:=1
+
+
+PKG_SOURCE:=v$(PKG_VERSION).tar.gz
+PKG_SOURCE_URL:=https://github.com/vicgeralds/$(PKG_NAME)/archive/
+PKG_HASH:=e7e7cb74bb814b9fec80fe4ede3c3f04134d8217d630e092a097238248d604f9
+
+PKG_MAINTAINER:=hyphop
+
+PKG_LICENSE:=GPL-3.0+
+PKG_LICENSE_FILES:=COPYING
+
+PKG_INSTALL:=1
+
+include $(INCLUDE_DIR)/package.mk
+
+define Build/Configure
+    ( cd $(PKG_BUILD_DIR); ./configure 2player=no joystick=no network=no allegro=no xlib=no term_resizing=no menu=no pctimer=no )
+endef
+
+define Package/vitetris
+  SECTION:=games
+  CATEGORY:=Games
+  SUBMENU:=Filesystem
+  TITLE:=Terminal tetris game
+  URL:=https://github.com/vicgeralds/vitetris
+endef
+
+define Package/vitetris/description
+	terminal tetris
+endef
+
+define Package/vitetris/install
+	$(INSTALL_DIR) $(1)/usr/bin
+	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/local/bin/tetris $(1)/usr/bin
+endef
+
+$(eval $(call BuildPackage,vitetris))
