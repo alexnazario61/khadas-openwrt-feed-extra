@@ -78,7 +78,7 @@ define Build/Compile
 		CC="$(TARGET_CC)" \
 		EXTRA_CFLAGS="$(TARGET_CFLAGS) $(TARGET_CPPFLAGS)" \
 		EXTRA_LDFLAGS="$(TARGET_LDFLAGS)" \
-		$(MAKE_FLAGS) ZSTD_SUPPORT=1 \
+		$(MAKE_FLAGS) \
 		mksquashfs unsquashfs
 endef
 
