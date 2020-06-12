@@ -5,7 +5,7 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=uinput
+PKG_NAME:=i2c
 PKG_RELEASE:=1
 
 PKG_LICENSE:=GPL-2.0+
@@ -14,15 +14,15 @@ PKG_MAINTAINER:=hyphop
 
 include $(INCLUDE_DIR)/package.mk
 
-define Package/uinput
+define Package/i2c
   SECTION:=utils
   CATEGORY:=Utilities
   SUBMENU:=user
-  TITLE:=uinput
+  TITLE:=i2c pipe
 endef
 
-define Package/uinput/description
-  This package contains an cgi utility that is useful for up/downloading files
+define Package/i2c/description
+  This package contains simple i2c pipe command sender
 endef
 
 define Build/Prepare
@@ -31,10 +31,10 @@ define Build/Prepare
 	ls -l1 
 endef
 
-define Package/uinput/install
-	$(STRIP) $(PKG_BUILD_DIR)/uinput
+define Package/i2c/install
+	$(STRIP) $(PKG_BUILD_DIR)/$(PKG_NAME)
 	$(INSTALL_DIR) $(1)/usr/bin
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/uinput $(1)/usr/bin
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/$(PKG_NAME) $(1)/usr/bin
 endef
 
-$(eval $(call BuildPackage,uinput))
+$(eval $(call BuildPackage,i2c))
