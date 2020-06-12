@@ -16,6 +16,7 @@ PKG_BUILD_PARALLEL:=1
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://megatools.megous.com/builds/experimental/
 PKG_HASH:=d41d8cd98f00b204e9800998ecf8427e
+PKG_HASH:=4dcfc81b1e1f907d7b1e4c5024278074
 
 include $(INCLUDE_DIR)/package.mk
 
