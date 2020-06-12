@@ -1,6 +1,5 @@
 # ## hyphop ##
-# This is free software, licensed under the GNU General Public License v2.
-# See /LICENSE for more information.
+#
 #
 
 include $(TOPDIR)/rules.mk
@@ -14,7 +13,7 @@ PKG_SOURCE:=v$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://github.com/vicgeralds/$(PKG_NAME)/archive/
 PKG_HASH:=e7e7cb74bb814b9fec80fe4ede3c3f04134d8217d630e092a097238248d604f9
 
-PKG_MAINTAINER:=hyphop
+PKG_MAINTAINER:=hyphop <art@khadas.com>
 
 PKG_LICENSE:=GPL-3.0+
 PKG_LICENSE_FILES:=COPYING

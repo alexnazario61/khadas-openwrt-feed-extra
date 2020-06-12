@@ -1,8 +1,5 @@
+# ## hyphop ##
 #
-# Copyright (C) 2006-2014 OpenWrt.org
-#
-# This is free software, licensed under the GNU General Public License v2.
-# See /LICENSE for more information.
 #
 
 include $(TOPDIR)/rules.mk
@@ -14,7 +11,8 @@ PKG_RELEASE:=1
 PKG_SOURCE:=$(PKG_NAME)_$(PKG_VERSION).orig.tar.gz
 PKG_SOURCE_URL:=https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/dialog/$(PKG_VERSION)-1build1/
 PKG_MD5SUM:=f66f28beca900b54f5fc90fdcce93508
-PKG_MAINTAINER:=hyphop
+
+PKG_MAINTAINER:=hyphop <art@khadas.com>
 
 include $(INCLUDE_DIR)/package.mk
 

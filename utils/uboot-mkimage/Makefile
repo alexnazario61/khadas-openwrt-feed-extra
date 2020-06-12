@@ -20,7 +20,7 @@ PKG_BUILD_DIR:=$(BUILD_DIR)/u-boot-$(PKG_VERSION)
 PKG_HASH:=e7e7cb74bb814b9fec80fe4ede3c3f04134d8217d630e092a097238248d604f9
 PKG_HASH:=56257a55360aa851c7384fcad1c04f4ff1819275af8b01307ec8eebc512786ea
 
-PKG_MAINTAINER:=hyphop
+PKG_MAINTAINER:=hyphop <art@khadas.com>
 
 #PKG_SOURCE_PROTO:=git
 #PKG_SOURCE_URL:=https://github.com/u-boot/u-boot.git

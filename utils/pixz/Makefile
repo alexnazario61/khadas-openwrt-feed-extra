@@ -11,7 +11,8 @@ PKG_RELEASE:=1
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
 PKG_SOURCE_URL=https://github.com/vasi/$(PKG_NAME)/releases/download/v$(PKG_VERSION)/
 PKG_HASH:=f6dc5909c9a31b192f69aa397ae8df48
-PKG_MAINTAINER:=hyphop
+
+PKG_MAINTAINER:=hyphop <art@khadas.com>
 
 PKG_FIXUP:=autoreconf
 PKG_INSTALL:=1

@@ -18,6 +18,8 @@ PKG_MAINTAINER:=Amol Bhave <ambhave@fb.com>
 PKG_LICENSE:=GPL-2.0-or-later
 PKG_LICENSE_FILES:=COPYING
 
+PKG_MAINTAINER:=hyphop <art@khadas.com>
+
 PKG_BUILD_PARALLEL:=1
 HOST_BUILD_PARALLEL:=1
 CMAKE_SOURCE_SUBDIR:=build/cmake

@@ -12,7 +12,8 @@ PKG_RELEASE:=1
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://github.com/relan/exfat/releases/download/v$(PKG_VERSION)/
 PKG_HASH:=dfebd07a7b907e2d603d3a9626e6440bd43ec6c4e8c07ccfc57ce9502b724835
-PKG_MAINTAINER:=hyphop
+
+PKG_MAINTAINER:=hyphop <art@khadas.com>
 
 PKG_LICENSE:=GPL-3.0+
 PKG_LICENSE_FILES:=COPYING

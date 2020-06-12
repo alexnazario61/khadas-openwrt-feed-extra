@@ -10,7 +10,7 @@ PKG_RELEASE:=1
 
 PKG_LICENSE:=GPL-2.0+
 
-PKG_MAINTAINER:=hyphop
+PKG_MAINTAINER:=hyphop <art@khadas.com>
 
 include $(INCLUDE_DIR)/package.mk
 

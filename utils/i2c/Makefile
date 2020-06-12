@@ -1,6 +1,5 @@
 # ## hyphop ##
-# This is free software, licensed under the GNU General Public License v2.
-# See /LICENSE for more information.
+#
 #
 
 include $(TOPDIR)/rules.mk
@@ -10,7 +9,7 @@ PKG_RELEASE:=1
 
 PKG_LICENSE:=GPL-2.0+
 
-PKG_MAINTAINER:=hyphop
+PKG_MAINTAINER:=hyphop <art@khadas.com>
 
 include $(INCLUDE_DIR)/package.mk
 

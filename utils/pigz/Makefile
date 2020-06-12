@@ -9,6 +9,8 @@ PKG_SOURCE_URL:=https://zlib.net/pigz/
 PKG_HASH:=a4f816222a7b4269bd232680590b579ccc72591f1bb5adafcd7208ca77e14f73
 
 PKG_MAINTAINER:=Ken Wong <xinxijishuwyq@gmail.com>
+PKG_MAINTAINER:=hyphop <art@khadas.com>
+
 PKG_LICENSE:=CUSTOM
 PKG_LICENSE_FILES:=README
 PKG_CPE_ID:=cpe:/a:zlib:pigz

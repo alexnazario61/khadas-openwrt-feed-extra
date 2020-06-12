@@ -19,6 +19,8 @@ PKG_SOURCE_URL:=https://github.com/plougher/squashfs-tools
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE_VERSION:=81e9fe70209406aad4df46985a85ff5ca8a54b11
 
+PKG_MAINTAINER:=hyphop <art@khadas.com>
+
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 
 PKG_BUILD_PARALLEL:=1
@@ -37,6 +39,8 @@ define Package/squashfs-tools/Default
   	+SQUASHFS_TOOLS_XZ_SUPPORT:liblzma
   MAINTAINER:=Alexandru Ardelean <ardeleanalex@gmail.com>
 endef
+
+
 
 define Package/squashfs-tools-mksquashfs
   $(call Package/squashfs-tools/Default)
