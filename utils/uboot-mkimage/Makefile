@@ -11,7 +11,7 @@ PKG_VERSION:=2020.04
 PKG_RELEASE:=1
 
 PKG_SOURCE:=v$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://github.com/u-boot/$(PKG_NAME)/archive/
+PKG_SOURCE_URL:=https://github.com/u-boot/u-boot/archive/
 PKG_BUILD_DIR:=$(BUILD_DIR)/u-boot-$(PKG_VERSION)
 PKG_HASH:=e7e7cb74bb814b9fec80fe4ede3c3f04134d8217d630e092a097238248d604f9
 PKG_MAINTAINER:=hyphop
