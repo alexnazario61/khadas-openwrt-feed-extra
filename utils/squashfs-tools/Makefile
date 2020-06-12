@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=squashfs-tools
 PKG_VERSION:=4.4
-PKG_RELEASE:=6
+PKG_RELEASE:=7
 PKG_LICENSE:=GPL-2.0
 PKG_LICENSE_FILES:=COPYING
 PKG_CPE_ID:=cpe:/a:phillip_lougher:squashfs
