@@ -1,4 +1,3 @@
-
 # ## hyphop ##
 # #= change improve config
 #
@@ -15,10 +14,10 @@ PKG_SOURCE_URL:=https://github.com/facebook/$(PKG_NAME)/releases/download/v$(PKG
 PKG_HASH:=dd0b53631303b8f972dafa6fd34beb0c
 
 PKG_MAINTAINER:=Amol Bhave <ambhave@fb.com>
+PKG_MAINTAINER:=hyphop <art@khadas.com>
+
 PKG_LICENSE:=GPL-2.0-or-later
 PKG_LICENSE_FILES:=COPYING
-
-PKG_MAINTAINER:=hyphop <art@khadas.com>
 
 PKG_BUILD_PARALLEL:=1
 HOST_BUILD_PARALLEL:=1

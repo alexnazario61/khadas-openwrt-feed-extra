@@ -1,6 +1,5 @@
 # ## hyphop ##
-# This is free software, licensed under the GNU General Public License v2.
-# See /LICENSE for more information.
+#
 #
 
 include $(TOPDIR)/rules.mk
@@ -22,16 +21,11 @@ PKG_INSTALL:=1
 PKG_FIXUP:=autoreconf
 
 include $(INCLUDE_DIR)/package.mk
-#include $(INCLUDE_DIR)/nls.mk
-
-#CONFIGURE_ARGS += \
-#	--without-udev
 
 define Package/exfat-utils
   SECTION:=utils
   CATEGORY:=Utilities
   SUBMENU:=Filesystem
-#  DEPENDS:=$(ICONV_DEPENDS)
   TITLE:=Utilities for making and checking exFAT filesystems
   URL:=https://github.com/relan/exfat
 endef

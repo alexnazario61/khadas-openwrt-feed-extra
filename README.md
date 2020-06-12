@@ -13,3 +13,4 @@
 + xxhash
 + zstd
 + vitetris
++ megatools

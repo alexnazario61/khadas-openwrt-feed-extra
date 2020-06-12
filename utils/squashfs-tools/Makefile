@@ -40,8 +40,6 @@ define Package/squashfs-tools/Default
   MAINTAINER:=Alexandru Ardelean <ardeleanalex@gmail.com>
 endef
 
-
-
 define Package/squashfs-tools-mksquashfs
   $(call Package/squashfs-tools/Default)
   TITLE+= mksquashfs
