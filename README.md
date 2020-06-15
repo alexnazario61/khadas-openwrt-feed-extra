@@ -18,6 +18,22 @@
 + vitetris
 + megatools
 
+
+## USAGE
+
+```
+echo "
+src-git base https://git.openwrt.org/openwrt/openwrt.git
+src-git extra https://github.com/hyphop/khadas-openwrt-feed-extra
+src-git packages https://git.openwrt.org/feed/packages.git
+" > feeds.conf
+
+## CLONE
+
+```
+git clone https://github.com/hyphop/khadas-openwrt-feed-extra.git
+```
+
 ## related projects
 
 + https://github.com/hyphop/khadas-openwrt-feed-extra
