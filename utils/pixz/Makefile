@@ -27,7 +27,7 @@ define Package/pixz
   SUBMENU:=Compression
   TITLE:=pixz
   URL:=https://github.com/vasi/pixz
-  DEPENDS:=+liblzma +libarchive
+  DEPENDS:=+liblzma +libarchive-custom
 endef
 
 define Package/pixz/install
