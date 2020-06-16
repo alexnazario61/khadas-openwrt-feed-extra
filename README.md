@@ -17,7 +17,7 @@
 + zstd
 + vitetris
 + megatools
-
++ ...
 
 ## USAGE
 
