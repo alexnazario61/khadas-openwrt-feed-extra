@@ -38,6 +38,8 @@ git clone https://github.com/hyphop/khadas-openwrt-feed-extra.git
 ## related projects
 
 + https://github.com/hyphop/khadas-openwrt-feed-extra
++ https://github.com/hyphop/khadas-rescue-rootfs
++ https://github.com/hyphop/khadas-rescue
 + https://github.com/hyphop/khadas-openwrt
 + https://github.com/hyphop/khadas-linux-kernel
 + https://github.com/hyphop/khadas-uboot
