@@ -8,9 +8,9 @@ PKG_NAME:=vitetris
 PKG_VERSION:=0.58.0
 PKG_RELEASE:=1
 
-
-PKG_SOURCE:=v$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://github.com/vicgeralds/$(PKG_NAME)/archive/
+PKG_SOURCE_URL=https://codeload.github.com/vicgeralds/$(PKG_NAME)/tar.gz/$(PKG_VERSION)?
+PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_HASH:=e7e7cb74bb814b9fec80fe4ede3c3f04134d8217d630e092a097238248d604f9
 
 PKG_MAINTAINER:=hyphop <art@khadas.com>
