@@ -24,8 +24,8 @@
 ```
 echo "
 src-git base https://git.openwrt.org/openwrt/openwrt.git
-src-git extra https://github.com/hyphop/khadas-openwrt-feed-extra
 src-git packages https://git.openwrt.org/feed/packages.git
+src-git extra https://github.com/hyphop/khadas-openwrt-feed-extra
 " > feeds.conf
 ```
 
