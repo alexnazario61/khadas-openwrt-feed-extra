@@ -51,7 +51,7 @@ define Package/dropbear
   SECTION:=net
   CATEGORY:=Base system
   TITLE:=Small SSH2 client/server
-  DEPENDS:= +DROPBEAR_ZLIB:zlib
+  DEPENDS:= zlib
   ALTERNATIVES:=\
 	  100:/usr/bin/ssh:/usr/sbin/dropbear \
 	  100:/usr/bin/scp:/usr/sbin/dropbear \
@@ -72,6 +72,7 @@ define Package/dropbearconvert
   $(call Package/dropbear/Default)
   SECTION:=utils
   CATEGORY:=Utilities
+  DEPENDS:= zlib
   TITLE:=Utility for converting SSH keys
 endef
 
@@ -104,7 +105,7 @@ define Build/Configure
 	echo '#define DROPBEAR_CURVE25519 $(if $(CONFIG_DROPBEAR_CURVE25519),1,0)' >> \
 		$(PKG_BUILD_DIR)/localoptions.h
 
-	echo '#define DROPBEAR_CHACHA20POLY1305 $(if $(DROPBEAR_CHACHA20POLY1305),1,0)' >> \
+	echo '#define DROPBEAR_CHACHA20POLY1305 $(if $(CONFIG_DROPBEAR_CHACHA20POLY1305),1,0)' >> \
 		$(PKG_BUILD_DIR)/localoptions.h
 
 	for OPTION in DROPBEAR_ECDSA DROPBEAR_ECDH; do \
@@ -130,6 +131,8 @@ define Build/Configure
 		$(PKG_BUILD_DIR)/sysoptions.h; \
 	done
 
+	cat $(PKG_BUILD_DIR)/localoptions.h
+	
 	# Enforce rebuild of svr-chansession.c
 	rm -f $(PKG_BUILD_DIR)/svr-chansession.o
 endef

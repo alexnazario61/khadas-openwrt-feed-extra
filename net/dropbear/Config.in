@@ -2,7 +2,7 @@ menu "Configuration"
 	depends on PACKAGE_dropbear
 
 config DROPBEAR_CHACHA20POLY1305
-	bool chacha20
+	bool "chacha20"
 	default y
 	help
 	    chacha20
