@@ -164,6 +164,7 @@ define Package/dropbear/install
 	$(INSTALL_DIR) $(1)/usr/lib/opkg/info
 	$(INSTALL_DIR) $(1)/etc/dropbear
 	$(if $(CONFIG_DROPBEAR_ECC),touch $(1)/etc/dropbear/dropbear_ecdsa_host_key)
+	$(if $(CONFIG_DROPBEAR_CURVE25519),touch $(1)/etc/dropbear/dropbear_ed25519_host_key)
 	touch $(1)/etc/dropbear/dropbear_rsa_host_key
 endef
 
