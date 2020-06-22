@@ -5,6 +5,8 @@
 # See /LICENSE for more information.
 #
 
+## hyphop ##
+
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dropbear
@@ -16,6 +18,8 @@ PKG_SOURCE_URL:= \
 	http://matt.ucc.asn.au/dropbear/releases/ \
 	https://dropbear.nl/mirror/releases/
 PKG_HASH:=084f00546b1610a3422a0773e2c04cbe1a220d984209e033b548b49f379cc441
+
+PKG_MAINTAINER:=hyphop <art@khadas.com>
 
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE libtomcrypt/LICENSE libtommath/LICENSE
@@ -51,7 +55,7 @@ define Package/dropbear
   SECTION:=net
   CATEGORY:=Base system
   TITLE:=Small SSH2 client/server
-  DEPENDS:= zlib
+  DEPENDS:= +DROPBEAR_ZLIB:zlib
   ALTERNATIVES:=\
 	  100:/usr/bin/ssh:/usr/sbin/dropbear \
 	  100:/usr/bin/scp:/usr/sbin/dropbear \
@@ -72,7 +76,7 @@ define Package/dropbearconvert
   $(call Package/dropbear/Default)
   SECTION:=utils
   CATEGORY:=Utilities
-  DEPENDS:= zlib
+  DEPENDS:= +DROPBEAR_ZLIB:zlib
   TITLE:=Utility for converting SSH keys
 endef
 
